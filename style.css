@@ -21,18 +21,8 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-        box-shadow: inset 1px -10px 500px #92bec4;
-
+    box-shadow: inset 1px -10px 500px #92bec4;
 }
-.menu-icon{
-    display: none;
-    font-size: 1.9rem;
-    cursor: pointer;
-}
-
-
-
-
 nav{
     height:3rem;
     width: 100%;
@@ -47,7 +37,7 @@ nav{
 .navbar{
     display: flex;
     gap: 5px;
-    margin: 0;
+    padding-top:10px;
 }
 .navbar.show{
     display: flex;
@@ -57,8 +47,12 @@ nav{
 
 .title h4{
     font-size: 1.8rem;
-    margin: 3rem;
+    margin-left: 3rem;
+    padding-top:10px;
 
+}
+.menu-icon{
+    display: none;
 }
 ul li{
     list-style: none;
@@ -118,8 +112,8 @@ button{
 }
 .hero-left{
     width: 50%;
-    margin-top: 6rem;
-    margin-left: 3rem;
+    padding-top: 6rem;
+    padding-left: 3rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -127,14 +121,11 @@ button{
 .hero-left h1{
     font-size:7rem;
     font-weight: 550;
-    
 }
 .hero-left p{
     font-size: 2rem;
     font-weight: 300; 
-    
 }
-
 .main-btn{
         display: flex;
         gap: 2rem;
@@ -149,7 +140,6 @@ button{
     position: relative;
     height:40rem;
     width: 50%;
-    
 }
 .blob{
     position: absolute;
@@ -157,8 +147,9 @@ button{
     width: 30rem; */
     /* background-color: #ff6f61;
     border-radius: 60% 40% 70% 30% / 40% 60% 40% 60%; */
-    /* top: 5%; */
+    top: 10%;
     z-index: 1;
+    max-width: 600px;
 }
 .hero-img{
 position: absolute;
@@ -168,26 +159,32 @@ height: auto ;
 max-width: 100%;
 top: 10%;
 bottom: 10%;
-
 }
 
 /* Tablet */
 @media (max-width: 1024px){
     
-
+.title h4{
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    padding-top:0;
+}
     .hero{
         flex-direction: column;
         align-items: center;
-        gap: 0;
+        /* gap: 2rem; */
     }
     .hero-left{
         width: 100%;
-        margin: 4rem 0;
+        margin-top: 0;
+        margin-right: 0;
+        padding: 0.5rem;
         align-items: center;
         gap: 0.5rem;
     }
     .hero-left h1{
-        font-size: 3rem;
+        font-size: 4rem;
+
     }
     .hero-left p{
         font-size: 1.5rem;
@@ -196,16 +193,26 @@ bottom: 10%;
         height: 34rem;
     }
     .blob{
-        top: 10%;
+        top: 13%;
+        padding-top: 1rem
     }
     .hero-img{
-        top: -5%;
+        top: 3%;
     }
     #contact{
         margin-top: 2rem;
         height: 100%;
     }
+    .page h5{
+    font-size: 1rem;
 }
+ .page p{
+    font-size: 0.7rem;
+    padding: 0.4rem;
+    color: #616161;
+}
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     
@@ -239,26 +246,27 @@ bottom: 10%;
 }
  .title h4{
     margin:0;
-
 }
   .menu-icon{
     display: block;
-   
+    padding: 5px;  
 }
-
+.hero{
+    padding-top: 3rem;
+}
   .hero-left h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .hero-left p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
+   .hero-left{
+        gap: 1rem;
+    }
 
   .card {
-
     flex-direction: column;
     align-items: center;
-    margin: 1rem;
-    padding: 2rem;
   }
 .page{
     width: 80%;
@@ -275,10 +283,8 @@ bottom: 10%;
     
   }
   input{
-    padding: 2PX;
-    margin: 0.5rem;
     font-size: 0.4rem;
-    width: 15rem;
+    /* width: 10rem; */
 }
 .middel .skill{
     margin-left:0;
@@ -292,14 +298,14 @@ bottom: 10%;
     width: 18rem;
 }
 
-.my-process{
-}
 .number-1{
     flex-direction: column;
+    align-items: center;
 }
 
   .get-in{
     padding-bottom: 1rem;
+    text-align: center;
 }
 }
 
@@ -307,7 +313,7 @@ bottom: 10%;
 
   .middel{
     width: 100%;
-    height: 100%;
+    max-height:1200px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -318,10 +324,8 @@ bottom: 10%;
    
 }
 .skill{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     margin-left: 3rem;
-
-    
 }
 .icon{
     display:flex;
@@ -355,7 +359,6 @@ bottom: 10%;
 }
 .card{ 
     display: flex;
-    
     gap: 1rem;
 }
 .page{
@@ -402,7 +405,7 @@ font-size: 1rem;
    
 }
 .skill-2{
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 0.5rem;
 }
 .number-1{
@@ -439,13 +442,12 @@ padding: 0.3rem;
 color: rgb(0, 0, 0);
 }
 input{
-    padding: 0.2rem;
-    margin: 1rem;
+    padding:0.2rem 0 ;
+    margin: 0.7rem 0;
     font-size: 0.9rem;
-    width: 22rem;
+    width: 17rem;
     background-color: whitesmoke;
     border-radius: 5px;
-    
 }
 input:focus {
   outline: none;
