@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+<nav>
+    <div class="title"><h4>Web Dev</h4> 
+          
+    </div>
+    <ul id="navbar" class="navbar">
+        <li class="nav"><a href="#">Home</a></li>
+        <li class="nav"><a href="#">Project</a></li>
+        <li class="nav"><a href="#">Process</a></li>
+        <li class="nav"><a href="#">Contact</a></li>
+        <button class="btn">Download CV</button>
+    </ul>
+     <div id="menu-icon" class="menu-icon"><i class="ri-menu-5-line"></i></div>
+  
+    
+</nav>
+<section class="hero"> 
+    <div class="hero-left">
+        <h1>Hello, I'm Aman</h1>
+        <p>Frontend Web Developer</p>
+        <div class="main-btn">
+           <a href="#view-project"> <button class="btn bottom" >View Project</button></a>
+           <a href="#test"><button class="bottom cnt" >Contact Me</button></a> 
+        </div>
+
+    </div>
+    <div class="hero-right">
+        <svg class="blob" viewBox="33 30 120 120" xmlns="http://www.w3.org/2000/svg">
+  <path fill="#b4b4b4" d="M33,-52.6C37.6,-42.1,3.5,-28.5,35.6,-12.4C38.7,0.7,50,10.3,48.8,16.5C47.7,22.7,34.1,25.5,23.9,27.4C13.7,29.3,6.9,30.3,-2.2,35.4C-11.3,36.5,-22.6,41.6,-32.9,39.7C-43.2,40.8,-52.5,28.9,-59.2,17.1C-65.9,5.3,-70.1,-9.4,-62.9,-17C-55.7,-24.6,-37.1,-25.1,-24.8,-33C-12.4,-40.9,-6.2,-56.3,4,-61.8C14.2,-67.3,28.4,-63,33,-52.6Z" transform="translate(100 100)" />
+</svg>
+       <img class="hero-img" src="hero-img-remove.png" alt="">
+    </div>
+</section>
+</main>
+
+<div id="view-project" class="middel">
+
+    <div class="skill"><h2>Skill</h2></div>
+   <div class="icon">
+    <img class="icon-img box-1" src="html5-line.png" alt="html" >
+    <img  class="icon-img box-2"src="css3-line.png" alt=" css">
+    <img class="icon-img box-3" src="javascript-line.png" alt="javascript">
+    <img class="icon-img box-4" src="bootstrap-line.png" alt="bootstrap">
+   </div>
+   <div class="skill"><h2>Project</h2></div> 
+
+   <div class="card">
+
+    <div  class="page">
+    <h5>Responsive Landing Page</h5>
+    <p>Built HTML, CSS & JS</p>
+    <img src="bg-img.png"  alt="" >
+    <p>Live Demo Card</p>
+    </div>
+    <div class="page">
+    <h5>Responsive Landing Page</h5>
+    <p>Built HTML, CSS & JS</p>
+    <img src="bg-img.png"  alt="" >
+    <p>Live Demo Card</p>
+    </div>
+    <div class="page">
+    <h5>Responsive Landing Page</h5>
+    <p>Built HTML, CSS & JS</p>
+    <img src="bg-img.png"  alt="" >
+    <p>Live Demo Card</p>
+    </div>
+   </div>
+   <div class="bottom-btn">
+    <a href="#">   <button class="bottom click"> View All Project</button>
+</a>
+   </div>
+</div>
+<footer id="contact">
+    <div class="my-process">
+        <h2 class="skill-2">My Process</h2>
+        <div class="number-1">
+        <div class="mini-card">
+            <span class="number">1</span>
+            <h5>Idea & Research</h5>
+            <p>Understandig your needs </p>
+        </div>
+         <div class="mini-card">
+            <span class="number">2</span>
+            <h5>Design & Develop</h5>
+            <p>Coding and creating polished UI </p>
+        </div>
+         <div class="mini-card">
+            <span class="number">3</span>
+            <h5>Test & Deploy</h5>
+            <p>Optimizing  and launching your site  </p>
+        </div>
+</div>
+    </div>
+    <div class="get-in">
+        <h2 class="skill-2">Contact Me</h2>
+        <form onsubmit="sendWhatsApp(); return false;">
+      <input id="test" type="text" placeholder="Your Name"> <br>
+      <input id="email" type="email" placeholder="Your Email"><br>
+      <input id="message" type="text" placeholder="Your Message"> <br>
+        <button class= " bottom submit  " type="submit">Send Message</button>
+        </form>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
